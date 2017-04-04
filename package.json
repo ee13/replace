@@ -4,7 +4,7 @@
   "description": "like reddit place but worse",
   "main": "index.js",
   "scripts": {
-    "test": "start"
+    "test": "index.js"
   },
   "repository": {
     "type": "git",
