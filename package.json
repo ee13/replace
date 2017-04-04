@@ -1,0 +1,25 @@
+{
+  "name": "replace",
+  "version": "1.0.0",
+  "description": "like reddit place but worse",
+  "main": "index.js",
+  "scripts": {
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ee13/replace.git"
+  },
+  "keywords": [
+    "express",
+    "place"
+  ],
+  "author": "micah price",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "lowdb": "^0.16.0",
+    "moment": "^2.18.1"
+  }
+}

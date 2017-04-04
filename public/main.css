@@ -1,0 +1,132 @@
+/*.
+grid { 
+    background:pink;
+	width:100vw;
+    height: 100vw;
+	}
+.grid td {
+	background-color:red;
+    cursor:pointer;
+    text-align:center;
+    font-family:sans-serif; font-size:16px
+}
+.grid td.clicked {
+    background-color:red;
+}
+html, body
+{
+  height: 100%;
+}
+*/
+#mainTable {
+    background:white;
+    height: 100%;
+}
+body {
+ margin-top: 0px;
+ margin-right: 0px;
+ margin-bottom: 0px;
+ margin-left: 0px
+}
+table { 
+	width: 100%;
+	height: 100%;
+	border-collapse:collapse;
+	border-right:1px solid;
+    cursor:pointer;
+}
+
+#title {
+    position: absolute;
+    right: 5%;
+    top: 40%;
+}
+#subtitle {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+}
+.tg  {border-collapse:collapse;
+	border-spacing:0;
+	position:absolute;
+	border-right:1px solid;
+	border-left:1px solid;
+	border-top:1px solid;
+right:10%;
+bottom:0px;
+width:140px;
+height:40px;}
+
+.tg th, .tg td {
+	width:20px;
+	height:20px;
+}
+
+#timer {
+	position: absolute;
+	right:10%;
+	bottom:40px;
+	width: 140px;
+	height: 20px;
+}
+
+.tg .tg-9u0h{background-color:#38fff8;}
+.tg .tg-21yu{background-color:#f8ff00;}
+.tg .tg-gqdk{background-color:black;}
+.tg .tg-xw94{background-color:#3531ff;}
+.tg .tg-doj0{background-color:#6434fc;}
+.tg .tg-i6eq{background-color:#ffccc9;}
+.tg .tg-q9qv{background-color:#fe0000;}
+.tg .tg-589f{background-color:#f56b00;}
+.tg .tg-y0xi{background-color:#32cb00;}
+.tg .tg-3we0{background-color:white;}
+.tg .tg-r61r{background-color:#67fd9a;}
+.tg .tg-h1ue{background-color:#3166ff;}
+.tg .tg-4do8{background-color:#663234;}
+.tg .tg-7cfi{background-color:#ffc702;}
+
+#snackbar {
+    visibility: hidden; /* Hidden by default. Visible on click */
+    min-width: 250px; /* Set a default minimum width */
+    margin-left: -125px; /* Divide value of min-width by 2 */
+    background-color: #333; /* Black background color */
+    color: #fff; /* White text color */
+    text-align: center; /* Centered text */
+    border-radius: 2px; /* Rounded borders */
+    padding: 16px; /* Padding */
+    position: fixed; /* Sit on top of the screen */
+    z-index: 1; /* Add a z-index if needed */
+    left: 50%; /* Center the snackbar */
+    bottom: 30px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+    visibility: visible; /* Show the snackbar */
+
+/* Add animation: Take 0.5 seconds to fade in and out the snackbar. 
+However, delay the fade out process for 2.5 seconds */
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+}
