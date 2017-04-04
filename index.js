@@ -8,6 +8,8 @@ const db = low('db.json');
 
 var timeV = "DD-MM-YYYY hh:mm:ss"
 
+app.set('port', (process.env.PORT || 5000));
+
 db.defaults({ 'board': [], 'users': [] }).write();
 
 app.use(bodyParser.json()); // for parsing application/json
@@ -87,6 +89,6 @@ app.post('/load', function(req, res) {
   //res.send({ some: JSON.stringify({response:'json'}) });
 });
 
-app.listen(3000);
-
-console.log("Running at Port 3000");
+app.listen(app.get('port'), function() {
+  console.log('Node app is running on port', app.get('port'));
+});
